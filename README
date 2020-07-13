@@ -1,0 +1,21 @@
+value1 was simply described as 'string'.  I'm choosing a length limit of
+4096 characters... well, 10 actually, for testing purposes.
+
+'/api/read/:recordId    Read a specific record'
+unclear if the : is part of the URL or simply noting a variable field.
+I assume the latter.
+
+timestamp is # of milliseconds, but integer or float?  I'll assume
+integer, else it could simply have been float and # of seconds instead
+of # of milliseconds.
+
+
+I'm using Django but not Django Rest Framework, and bypassing the
+'views' part of Django for pure REST API.  Not sure if this is best
+practice but it's what I know at the moment.
+
+Project was said to be about how I code, not how I set up a secure
+webserver, so it's Django development server, HTTP, CSRF disabled.
+
+Concurrency: sqlite seems to lock itself on writes, so no explicit
+locking code needed for this project.
