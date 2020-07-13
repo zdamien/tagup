@@ -1,3 +1,8 @@
+python test.py
+tests the basic API functionality in the obvious way.
+URLs other than create and modify work in a browser too.
+
+
 value1 was simply described as 'string'.  I'm choosing a length limit of
 4096 characters... well, 10 actually, for testing purposes.
 
